@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins';
+}
+body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: '';
+}
+.fullForm{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5vh;
+    width: 150vh;
+    padding-top: 1vh;
+    border-radius: 1vh;
+    border: solid whitesmoke;
+    box-shadow: rgba(141, 132, 132, 0.123) 4vh 2vh 3vh;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin-right: 14vh;
+    font-size: 12px;
+    gap: 1vh;
+}
+
+
+img{
+    height: 80vh;
+   width: 50%;
+   
+}
+p{
+    font-family: 'Madimi One';
+    font-size: 15px;
+    color: #007FFF;
+    text-align: center;
+    padding-bottom: -2vh;
+}
+.insc{
+    font-size: 2em;
+}
+a{
+    color: rgb(186, 180, 146);
+}
+button{
+    color: white;
+    border: none;
+    border-radius: 1vh;
+    padding: 1vh;
+    margin-top: 1vh;
+    background: #007FFF;
+}
+button:hover{
+    box-shadow: 1px 1px 1px #0d5195 ;
+    font-weight: bolder;
+}
