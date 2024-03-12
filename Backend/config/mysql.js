@@ -12,3 +12,4 @@ db.connect((error)=>{
     console.log('connexion réussie');
 });
 module.exports = db;
+

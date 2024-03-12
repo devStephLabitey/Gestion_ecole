@@ -29,15 +29,15 @@ exports.signup = (req, res)=>{
 exports.login = (req, res) => {
     console.log(req.body);
 
-    let selectUserQuery = "SELECT * FROM users WHERE email=?";
-    dataBase.query(selectUserQuery, [req.body.email], (error, result) => {
+    let selectUserQuery = "SELECT * FROM `users` WHERE email=?";
+    db.query(selectUserQuery, [req.body.email], (error, result) => {
         if (error) {
             res.status(500).json({ error: "Internal server error ooooo" });
         } else if (result.length > 0) {
-            bcrypt.compare(req.body.passwordHash, result[0].hash)
+            bcrypt.compare(req.body.password, result[0].pass_word)
                 .then((valid) => {
                     if (valid) {
-                        res.status(200).json({ message: "Login successful", id: result[0].Surname });
+                        res.status(200).json({ message: "Login successful", id: result[0].email });
                     } else {
                         res.status(401).json({ error: "Incorrect password" });
                     }

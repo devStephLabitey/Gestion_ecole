@@ -5,13 +5,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Récupération des valeur d input
         const email = document.getElementById('loginEmail').value;
-        const PasswordHash = document.getElementById('loginPassword').value;
+        const password = document.getElementById('loginPassword').value;
 
-        console.log(email, PasswordHash);
+        console.log(email, password);
         // Création d objet avec les valeur d input
-        const formData = {
+        const Formdata = {
            email: email,
-            passwordHash: PasswordHash
+           password: password
         };
 
         // Envoi des données au backend pour l'authentification
@@ -20,17 +20,16 @@ document.addEventListener('DOMContentLoaded', function () {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(formData) 
+            body: JSON.stringify(Formdata) 
         })
         .then(response => {
             if (response.ok) {
-                console.log(response.formData);
+                console.log(response.Formdata);
                 console.log("ok");
                 // La requête a réussi
                 // Rediriger l'utilisateur vers l accueil
                 window.location.href = 'acceuil.html';
-                let owner= formData.email
-                alert("Bienvenue "+owner)
+                
             } else {
                 
                 console.error("Échec de l'authentification");
