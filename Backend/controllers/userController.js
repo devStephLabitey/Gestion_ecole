@@ -24,9 +24,32 @@ exports.signup = (req, res)=>{
 }
 
 
+exports.timetable = (req, res)=>{
+    console.log(req.body);
+    let insertUserQuery = "INSERT INTO timetable (dates, times, nomCours, typeCours, nomProf,  nomSalle) VALUES(?,?,?,?,?,?)";
+    
+    then(()=>{
+        db.query(
+            insertUserQuery,
+            [req.body.dates, req.body.times, req.body.nomCours, req.body.typeCours, req.body.nomProf, req.body.nomSalle],
+           
+            (error, result)=>{
+                if (error){
+                    res.status(401).json(error)
+                }
+                res.status(201).json({id: result.insertId})
+            },
+            console.log(req.body.dates, req.body.times, req.body.nomCours, req.body.typeCours, req.body.nomProf, req.body.nomSalle)
+        )
+    })
+    .catch((error)=>{
+        res.status(500).json(error)
+    }) 
+}
 
 
-exports.login = (req, res) => {
+
+exports.login = (req, res) => { 
     console.log(req.body);
 
     let selectUserQuery = "SELECT * FROM `users` WHERE email=?";
@@ -43,7 +66,7 @@ exports.login = (req, res) => {
                     }
                 })
                 .catch((error) => {
-                    res.status(500).json({ error: "Internal server error ooooooooooooooooo" });
+                    res.status(500).json({ error: "Internal server error" });
                 });
         } else {
             res.status(401).json({ error: "User not found" });
