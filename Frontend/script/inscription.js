@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function (){
 
 
         const Formdata = {
-            nom: nom,
+            nom: nom, 
             prenom: prenom,
             email: email,
             state: state,

@@ -10,52 +10,17 @@
     scroll-behavior: smooth;
     scroll-margin-right: 4vh;
 } */
-body{
-    position: relative;
-}
-#welcomeOver{
-    position: absolute;
-    z-index: 4;
-    height: 100%;
-    width: 100%;
+/* body{    
     display: flex;
-    justify-content: center;
-    background: rgba(255, 0, 0, 0.098);
-    padding-top: 25vh;
-    backdrop-filter: blur(5vh);
-}
-#welcomeOver.disappear{
-    opacity: 0;
-    z-index: -100;
-}
-.overlay{
-    display: flex;
-    flex-direction: column;
-    color: #007FFF;
-    font-family: 'Madimi One';
     align-items: center;
-    justify-content: space-around;
-    height: 40vh;
+    justify-content: center;
+} */
+
+form{
+    display: flex;
     
-    font-size: 1.5em;
-    width: 60vh;
-    background: white;
-    border-radius: 2vh;
 }
-.overlay button{
-    color: white;
-    border: none;
-    width: 40vh;
-    height: 6vh;
-    background: #007FFF;
-    border-radius: 12vh;
-    font-size: 1em;
-    cursor: pointer;
-}
-.overlay .up{
-    font-weight: bolder;
-    font-size: 2em;
-}
+
 .logout{
     border: none;
     background: #0080ff;

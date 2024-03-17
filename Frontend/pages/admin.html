@@ -3,28 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/acceuil.css">
+    <link rel="stylesheet" href="../styles/admin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <title>AcceuilAdmin</title>
 </head>
 <body>
-<div id="welcomeOver" >
-  <div class="overlay">
-    <p class="up">Welcome</p>
-    <p>Username</p>
-    <button id="butt">Merci</button>
-  </div>
-</div>
+
   <div class="dashboard">
  <div class="logo">
   <img src="../assets/logo.png" alt="">
   <p class="logoTxt">INSTITUT NEWTOWN</p>
  </div>
     <a href="#Home" ><i class="fa fa-home"></i><p>Home</p></a>
-    <a href="#Profil" ><i class="fa fa-user"></i><p>Profil</p></a>
-    <a href="#TimeTable"><i class="fa fa-table"></i><p>Emploi du temps</p></a>
-    <a href="#Comment" id="#Plaintes ou commentaire"><i class="fa fa-comment"></i><p>Commentaires</p></a>
+    <a href="#Profil"><i class="fa fa-user"></i><p>Profil</p></a>
+    <a href="#TimeTable" ><i class="fa fa-table"></i><p>Creez Emploi du temps</p></a>
+    <a href="#List" ><i class="fa fa-users"></i><p>Voir liste d'étudiant</p></a>
+    <a href="#Comment" ><i class="fa fa-comment"></i><p>Voir les commentaires</p></a>
 
 <a href="../pages/connexion.html" class="logout"> <button ><i class="fa fa-flex"></i>Se déconnecter</button></a>
   </div>
@@ -125,8 +120,51 @@
     </div>
   </section>
   <section id="TimeTable">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil explicabo, nam officia totam asperiores, provident dolor beatae error unde dolorem eveniet consequatur vel fuga sequi dolore, corrupti vero repellat dignissimos? Iste minus quod ipsum corrupti voluptatem, voluptates accusamus provident non quibusdam perferendis dolor, ea laudantium veritatis modi ut praesentium explicabo aperiam harum? Beatae laborum laudantium accusantium illum aut cumque id officiis debitis itaque officia voluptate pariatur harum, facilis at, ipsa possimus, exercitationem quae vero consequuntur enim molestias incidunt doloribus. Est rerum veritatis minima assumenda veniam, perspiciatis inventore totam ipsam doloremque quas nemo voluptatum quam dolorum officia sint, culpa numquam necessitatibus quisquam voluptatibus quasi enim iusto nostrum, alias a. Molestiae, exercitationem blanditiis, natus dolores molestias optio a expedita commodi, necessitatibus officia facere! Similique in labore odio magnam eum perspiciatis molestiae totam sint, quaerat a. Praesentium veritatis voluptas reiciendis laboriosam provident, neque quam pariatur sed quaerat quibusdam sunt, labore libero iure consequatur nisi impedit totam magni assumenda cupiditate beatae modi tenetur corrupti dignissimos. Placeat, quasi culpa atque porro dolores corrupti exercitationem magni asperiores ea velit aliquam harum quaerat, ab sit, dignissimos libero consequuntur esse rem. Culpa velit nihil quis? Quaerat nulla alias tempora necessitatibus earum optio hic enim recusandae minus, sint, obcaecati veniam a in ab? Accusantium, nulla! Ea debitis aut qui quod dolores vel id, aperiam nam, iure assumenda cupiditate repellat nostrum possimus ipsum voluptates voluptatibus eveniet fugit ad recusandae quasi a saepe enim laborum ducimus. Laborum numquam tempore odit fuga, excepturi magnam ullam enim libero aliquid repudiandae doloremque odio labore velit quo, veniam corrupti hic molestias ad dolore! Sapiente iure cum pariatur quis, eius quia tenetur numquam possimus odio voluptatibus! Voluptatibus recusandae vero inventore. Cum rerum architecto tenetur eveniet minima tempora excepturi deleniti inventore distinctio illo doloribus facere delectus, voluptas nisi assumenda qui neque labore quis nostrum. Dolor repellat praesentium aspernatur minima vel, rerum minus inventore consequuntur incidunt vitae libero? Quia sed architecto suscipit, odio saepe quasi harum, perferendis sit esse cumque ad placeat quisquam adipisci quae totam fugit quam? Fugit nesciunt aspernatur quibusdam dolore eos provident reiciendis sit minima fuga cum laudantium nostrum doloribus consequuntur illo tenetur voluptatem excepturi, quia repudiandae voluptate error. Quae minima illum consectetur perferendis eligendi, quia inventore est nobis fuga provident nisi veniam nihil ipsa magni ab dolorem molestias architecto, eum eaque vel, quam quasi? Neque perferendis ipsa earum incidunt dolorum. Cupiditate ducimus iste veniam voluptas repudiandae nesciunt inventore pariatur ab ipsum dolorem consequuntur, laudantium magni neque officia earum necessitatibus quo animi nostrum nisi eos dolores debitis aliquam unde molestiae. Temporibus numquam fuga, exercitationem dolorem sapiente veniam eaque error ducimus doloremque quas voluptates quisquam itaque quasi distinctio quaerat, tempore a culpa maxime obcaecati facilis tenetur ad architecto? Fugit ratione, quos ipsam aspernatur perspiciatis at consequuntur, impedit libero cupiditate, non dignissimos voluptatum animi! Laboriosam animi alias nesciunt voluptates consequuntur. Placeat nisi dicta eligendi blanditiis quidem sunt in tempora consequatur dolorem autem. Itaque ad alias debitis eaque libero. Perspiciatis ad harum reprehenderit, eligendi fuga id alias cupiditate nam possimus dolorum culpa maxime a aspernatur, dolorem voluptatibus amet!
-  </section>
+    <div class="sectionName">Creez emploi du temps</div>
+    <form action="" method="POST">
+      
+       <div class="space">
+        <label for="">Date</label>
+        <input type="date" name="dates" placeholder="Date" id="dates" required>
+       </div>
+       <div class="space">
+        <label for="">Heure</label>
+        <input type="text" name="times" placeholder="00H00/00H00" id="times" required>
+       </div>
+       <div class="space">
+        <label for="">Nom du cours</label>
+        <input type="text" name="cours" placeholder="Cours" id="nomCours" required>
+       </div>
+
+       <div class="space">
+        <label for="">Type</label>
+          <select name="type" id="typeCours" required>
+              <option value="">Choisir une type de cours</option>
+              <option value="Cours">Cours</option>
+              <option value="TP">TP</option>
+              <option value="TD">TD</option>
+              <option value="EXAMEN">EXAMEN</option>
+          </select>
+       </div>
+       <div class="space">
+        <label for="">Prof.</label>
+        <input type="text" name="nomProf" placeholder="Prof." id="nomProf" required>
+       </div>
+       <div class="space">
+        <label for="">Salle</label>
+        <input type="text" name="nomSalle" placeholder="Salle" id="nomSalle" required>
+       </div>
+
+
+       <button>Créer</button>
+    </form>
+
+
+
+
+
+    
+ </section>
   <section id="Comment">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil explicabo, nam officia totam asperiores, provident dolor beatae error unde dolorem eveniet consequatur vel fuga sequi dolore, corrupti vero repellat dignissimos? Iste minus quod ipsum corrupti voluptatem, voluptates accusamus provident non quibusdam perferendis dolor, ea laudantium veritatis modi ut praesentium explicabo aperiam harum? Beatae laborum laudantium accusantium illum aut cumque id officiis debitis itaque officia voluptate pariatur harum, facilis at, ipsa possimus, exercitationem quae vero consequuntur enim molestias incidunt doloribus. Est rerum veritatis minima assumenda veniam, perspiciatis inventore totam ipsam doloremque quas nemo voluptatum quam dolorum officia sint, culpa numquam necessitatibus quisquam voluptatibus quasi enim iusto nostrum, alias a. Molestiae, exercitationem blanditiis, natus dolores molestias optio a expedita commodi, necessitatibus officia facere! Similique in labore odio magnam eum perspiciatis molestiae totam sint, quaerat a. Praesentium veritatis voluptas reiciendis laboriosam provident, neque quam pariatur sed quaerat quibusdam sunt, labore libero iure consequatur nisi impedit totam magni assumenda cupiditate beatae modi tenetur corrupti dignissimos. Placeat, quasi culpa atque porro dolores corrupti exercitationem magni asperiores ea velit aliquam harum quaerat, ab sit, dignissimos libero consequuntur esse rem. Culpa velit nihil quis? Quaerat nulla alias tempora necessitatibus earum optio hic enim recusandae minus, sint, obcaecati veniam a in ab? Accusantium, nulla! Ea debitis aut qui quod dolores vel id, aperiam nam, iure assumenda cupiditate repellat nostrum possimus ipsum voluptates voluptatibus eveniet fugit ad recusandae quasi a saepe enim laborum ducimus. Laborum numquam tempore odit fuga, excepturi magnam ullam enim libero aliquid repudiandae doloremque odio labore velit quo, veniam corrupti hic molestias ad dolore! Sapiente iure cum pariatur quis, eius quia tenetur numquam possimus odio voluptatibus! Voluptatibus recusandae vero inventore. Cum rerum architecto tenetur eveniet minima tempora excepturi deleniti inventore distinctio illo doloribus facere delectus, voluptas nisi assumenda qui neque labore quis nostrum. Dolor repellat praesentium aspernatur minima vel, rerum minus inventore consequuntur incidunt vitae libero? Quia sed architecto suscipit, odio saepe quasi harum, perferendis sit esse cumque ad placeat quisquam adipisci quae totam fugit quam? Fugit nesciunt aspernatur quibusdam dolore eos provident reiciendis sit minima fuga cum laudantium nostrum doloribus consequuntur illo tenetur voluptatem excepturi, quia repudiandae voluptate error. Quae minima illum consectetur perferendis eligendi, quia inventore est nobis fuga provident nisi veniam nihil ipsa magni ab dolorem molestias architecto, eum eaque vel, quam quasi? Neque perferendis ipsa earum incidunt dolorum. Cupiditate ducimus iste veniam voluptas repudiandae nesciunt inventore pariatur ab ipsum dolorem consequuntur, laudantium magni neque officia earum necessitatibus quo animi nostrum nisi eos dolores debitis aliquam unde molestiae. Temporibus numquam fuga, exercitationem dolorem sapiente veniam eaque error ducimus doloremque quas voluptates quisquam itaque quasi distinctio quaerat, tempore a culpa maxime obcaecati facilis tenetur ad architecto? Fugit ratione, quos ipsam aspernatur perspiciatis at consequuntur, impedit libero cupiditate, non dignissimos voluptatum animi! Laboriosam animi alias nesciunt voluptates consequuntur. Placeat nisi dicta eligendi blanditiis quidem sunt in tempora consequatur dolorem autem. Itaque ad alias debitis eaque libero. Perspiciatis ad harum reprehenderit, eligendi fuga id alias cupiditate nam possimus dolorum culpa maxime a aspernatur, dolorem voluptatibus amet!
   </section>
@@ -134,14 +172,6 @@
 
 
 
-  <script>
-    const overlay = document.getElementById('welcomeOver'),
-    removeOver = document.getElementById('butt')
-
-    console.log(overlay, removeOver);
-    removeOver.addEventListener('click', ()=>{
-      overlay.classList.toggle('disappear')
-    })
-  </script>
+<script src="../script/addTimeTable.js"></script>  
 </body>
 </html>
